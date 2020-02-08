@@ -1,0 +1,7 @@
+# Persistent cache configuration
+# options:
+#   storage: {storage}
+# default: [ storage: apc ]
+cache: [
+  storage: apc
+]
