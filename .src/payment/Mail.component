@@ -1,0 +1,11 @@
+component: test
+bind: [
+  test: [
+     class: \test\TestComponent
+     source: ../TestComponent.php
+     arguments: [
+        test1: test
+        test2: нихрена себе тест
+     ]
+  ]
+]

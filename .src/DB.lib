@@ -1,0 +1,15 @@
+component: db
+bind: [
+   db: [
+      class: \glx\DB\Connection
+      arguments: [[
+          driver:   mysql
+          host:     db
+          database: ticketing
+          username: root
+          password: "reloaded.,.once"
+          charset:  utf8
+          timezone: Europe/Kiev
+      ]]
+   ]
+]

@@ -1,0 +1,14 @@
+component: db
+bind: [
+   db: [
+      class: \glx\DB\Connection
+      arguments: [[
+          driver:   mysql
+          host:     localhost
+          database: auth
+          username: root
+          password: {reloaded.,.once}
+          charset:  utf8
+      ]]
+   ]
+]

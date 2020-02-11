@@ -1,0 +1,5 @@
+session: [
+  storage: cache
+  lifetime: 1300
+  secure: false
+]

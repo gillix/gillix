@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+ $package = [
+   'name' => 'example',
+   'description' => 'Example package. Please change name and description.',
+ ];
+ 
+ require_once '../../framework/vendor/autoload.php';
+ 
+ $timer = new \glx\Common\Stopwatch;
+ $config = \glx\Config\Reader::read(__DIR__.'/../storage-dev.gcml');
+ 
+ $storage = new glx\Storage\FS\Storage($config['storage']['main']);
+ $storage->compile(['package' => $package]);
+ 
+  echo "Time: ". $timer->elapsed();
+  echo "\nMemory: ". number_format(memory_get_usage(false), 0, '.', ',');
+ 

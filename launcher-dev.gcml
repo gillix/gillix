@@ -1,0 +1,70 @@
+# Main configuration file used by HTTP Launcher
+
+# The name of method that will be executed by launcher
+# from the requested node
+# default: start
+index: start
+
+# Sequence of profile names in order of priority
+# "{profile1}.{profile2}.{profile3}" | [ profile1, profile2, profile3 ]
+# default: {empty} (default profile)
+profile: dev
+
+# Default locale for project
+# options:
+#   auto: true|false (default is false) - try to detect
+#      locale from "Accept-Language" HTTP header and/or
+#      from client country (geoip)
+#   default: {locale} - will be used if detection
+#      failed or switched off
+# Short version:
+#   locale: {locale}
+# default: en_US
+locale: [
+  auto: false
+  default: en
+]
+
+# Default pages for standard HTTP errors
+# options:
+#   {code}: {page path}
+# default: {not configured} (standard server behavior)
+error: [
+  404: /error/404/
+#  403: /error/403/
+]
+
+# Include directive for include other configuration file
+# Multiple files can bee included with one directive:
+# %include: [ file1, file2, ... ]
+%include: [
+   cache.gcml
+   storage-dev.gcml
+   session-dev.gcml
+   logger-dev.gcml
+]
+
+# Default library components that will be available any time
+# by default without any other configuration
+components: [
+  %include: components.gcml
+]
+
+# Behavior of some core objects can be configured here
+core: [
+  # MultiLingual
+  ml: [
+    # If multilingual object don't have translation in
+    # current language, the default language can be used
+    # default: false
+    defaultIfEmpty: true
+    # specify default language
+    # default: {language of default locale} (see "locale"  section)
+    defaut: en
+# TODO: implement:
+#    fallback: [
+#       uk: ru, en
+#       ru: en
+#    ]
+  ]
+]

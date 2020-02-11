@@ -1,0 +1,18 @@
+type: test, test2
+#capture: locale, aid
+#capture: [ locale: ?checkLang, aid: numeric ]
+
+Title.ml: [
+  en: Main Page
+  ru: Главная
+]
+
+MainText.ml: [
+  en: Main Text
+  ru: Главный текст
+]
+
+external.img: "https://soundmagcdn.fra1.cdn.digitaloceanspaces.com/product/61088/c/coverkhaIdR-icon.jpg"
+localimg.img: "/products/hotels24pic.gif"
+
+

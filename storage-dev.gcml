@@ -1,0 +1,23 @@
+# Storage configuration of the project
+# options:
+#   main: {config} - main storage that will be used by launcher
+#   ... - other storages configuration that will be available
+#         from storage manager by specified name
+# Short version of {config}:
+#   main|{storage alias}: "fs:{location}"
+storage: [
+   main: [
+      # type of storage, currently "fs" only
+      type: fs
+      # location of folder with "manifest" file
+      location: ../
+      # "dev" or "production" mode, default is "production"
+      # in the "dev" mode storage is sensitive to file changes
+      # and recompiles objects with changed source
+      mode: dev
+      structure: [
+          public: public-dev/files
+      ]
+   ]
+#   example: "fs:example"
+]

@@ -1,0 +1,22 @@
+{
+    "package": {
+        "name": "example",
+        "description": "Example package. Please change name and description."
+    },
+    "storage": {
+        "structure": {
+            "public": "public-dev/files",
+            "source": ".src",
+            "registry": ".build/registry",
+            "hidden": ".build/hidden"
+        },
+        "type": "fs",
+        "id": "db121075000defd37d4407b567d1a836",
+        "root": "b03ccd2383c8430108ecc731f80bc3eb"
+    },
+    "build": {
+        "time": "2020-02-11 19:03:51",
+        "php": "PHP 7.4.2",
+        "os": "Windows NT KARAS 10.0 build 18363 (Windows 10) AMD64"
+    }
+}

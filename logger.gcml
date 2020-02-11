@@ -1,0 +1,17 @@
+#
+logger: [
+  default: production
+  dev: [
+     chrome: debug
+#     console: debug
+  ]
+  production: [
+     chrome: error
+     file: ../errors.log, error
+     file: ../critical.log, critical
+#    telegram: {key}, {channel}, critical
+  ]
+  stat: [
+     chrome: info
+  ]
+]

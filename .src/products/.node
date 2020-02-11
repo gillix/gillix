@@ -1,0 +1,14 @@
+type: SECTION
+
+Footer.tpl: {{
+  <div class='footer-products'>
+    <div class='title'><?= $this->Title ?></div>
+  </div>
+}}
+
+Title: Продукты!!!
+order: 3
+
+MainText: Это просто сука текст про продукты!!!
+
+Text.ml: [ ru: да!, en: yes! ]

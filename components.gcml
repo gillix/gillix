@@ -1,0 +1,17 @@
+geoip-city: [
+  alias: geoip
+  class: GeoIp2\Database\Reader
+  arguments: [ ../../../_COMMON/geoip/GeoLite2-City.mmdb ]
+]
+db: [
+  class: \glx\DB\Connection
+  arguments: [[
+      driver:   mysql
+      host:     localhost
+      database: auth
+      username: root
+      password: "reloaded.,.once"
+      charset:  utf8
+#      timezone: Europe/Kiev
+  ]]
+]

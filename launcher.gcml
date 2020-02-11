@@ -37,32 +37,18 @@ error: [
 # Include directive for include other configuration file
 # Multiple files can bee included with one directive:
 # %include: [ file1, file2, ... ]
-%include: [ storage.gcml, cache.gcml ]
-#%include ../session.gcml
-
-#
-logger: [
-  default: dev
-  dev: [
-     chrome: debug
-#     console: debug
-  ]
-  production: [
-     chrome: error
-     file: ../errors.log, error
-     file: ../critical.log, critical
-#    telegram: {key}, {channel}, critical
-  ]
-  stat: [
-     chrome: info
-  ]
+%include: [
+   cache.gcml
+   storage.gcml
+   session.gcml
+   logger.gcml
 ]
 
 
 # Default library components that will be available any time
 # by default without any other configuration
 components: [
-  %include: ../../components.gcml
+  %include: components.gcml
 ]
 
 # Behavior of some core objects can be configured here

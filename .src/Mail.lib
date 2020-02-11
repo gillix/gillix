@@ -1,0 +1,18 @@
+component: Mail.mailer
+use: Mail, MailService
+bind: [
+  Mail.mailer: [
+    class: \gcl\Mail\Mailers\PHPMailer
+    alias: \gcl\Mail\I\Mailer
+    arguments: [
+       transport: => Mail.transport
+    ]
+  ]
+  Mail.transport: [
+    class: \gcl\Mail\Transport\SMTP
+    arguments: [
+       host: localhost
+    ]
+  ]
+  Mail.letter: \gcl\Mail\Letter
+]

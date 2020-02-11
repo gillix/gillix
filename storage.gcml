@@ -14,7 +14,10 @@ storage: [
       # "dev" or "production" mode, default is "production"
       # in the "dev" mode storage is sensitive to file changes
       # and recompiles objects with changed source
-      mode: dev
+      mode: production
+      structure: [
+          public: public/files
+      ]
    ]
 #   example: "fs:example"
 ]

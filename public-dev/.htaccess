@@ -1,5 +1,8 @@
 RewriteEngine On
 
+RewriteCond  %{DOCUMENT_ROOT}/files/%{REQUEST_URI}  -f
+RewriteRule ^(.*) /files/$1 [L]
+
 RewriteCond  %{REQUEST_FILENAME}  !-f
 RewriteCond  %{REQUEST_URI} !/index.php
 RewriteRule ^(.*) /index.php [E=REQUESTURL:/$1,NC,L]

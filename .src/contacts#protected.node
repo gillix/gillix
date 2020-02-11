@@ -1,0 +1,12 @@
+type: SECTION
+order: 20
+russia#protected: [
+   type: test4
+   inherit: about
+]
+
+test.mtd: {{
+<?
+  \glx\Context::log()->debug($this->russia->path());
+
+}}

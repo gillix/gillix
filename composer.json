@@ -1,0 +1,18 @@
+{
+    "name": "gillix/gillix",
+    "description": "Gillix Project skeleton",
+    "type": "project",
+    "require": {
+        "gillix/framework": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yury Timoschuk",
+            "email": "yury.timoschuk@gmail.com"
+        }
+    ],
+
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
