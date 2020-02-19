@@ -1,1 +1,4 @@
 /.build
+/.manifest
+/public/static
+/public-dev/static

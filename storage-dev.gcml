@@ -13,10 +13,10 @@ storage: [
       location: ../
       # "dev" or "production" mode, default is "production"
       # in the "dev" mode storage is sensitive to file changes
-      # and recompiles objects with changed source
+      # and recompile objects with changed source
       mode: dev
       structure: [
-          public: public-dev/files
+          public: public-dev/static
       ]
    ]
 #   example: "fs:example"

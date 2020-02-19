@@ -16,7 +16,7 @@ storage: [
       # and recompiles objects with changed source
       mode: production
       structure: [
-          public: public/files
+          public: public/static
       ]
    ]
 #   example: "fs:example"

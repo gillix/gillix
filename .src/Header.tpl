@@ -1,5 +1,6 @@
-<?php
+@($db = null) <?php
  
+ /** @var glx\core\I\Node $this */
  /** @var glx\DB\Connection $db */
  $db = $this->DB;
  $user = $db->from('auth.users')->where('id', 1)->select('fullname', 'login')->one();
@@ -12,7 +13,7 @@ $new = new \glx\HTTP\URI(\glx\Context::http()->request()->uri());
 $session = \glx\Context::http()->session('test');
 $session->test++;
 $test = $session->test;
-if($test == 65)
+if($test === 65)
   $session->refresh();
 \glx\Context::log()->debug($test);
 ?><?= $this->external ?>
