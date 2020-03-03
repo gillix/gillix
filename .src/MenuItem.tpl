@@ -1,1 +1,0 @@
-<span class="item"><a href="<?= $this->path() ?>"><?= $this->name() ?></a></span>

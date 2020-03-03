@@ -1,1 +1,0 @@
-<div class="main-text"><?= $this->MainText ?></div>

@@ -1,5 +1,5 @@
 type: test, test2
-#capture: locale, aid
+capture: locale, aid
 #capture: [ locale: ?checkLang, aid: numeric ]
 
 Title.ml: [

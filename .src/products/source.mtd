@@ -1,2 +1,0 @@
-@($test, string $test2 = 'test4') <?php
-  return $test2 ?? $test;
