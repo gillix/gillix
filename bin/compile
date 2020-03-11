@@ -6,7 +6,7 @@
    'description' => 'Example package. Please change name and description.',
  ];
  
- require_once '../../vendor/autoload.php';
+ require_once __DIR__.'/../../vendor/autoload.php';
  
  $timer = \glx\Common\Stopwatch::start();
  $config = \glx\Config\Reader::read(__DIR__.'/../config/storage-dev.gcml');
