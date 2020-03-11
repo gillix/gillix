@@ -10,7 +10,7 @@ storage: [
       # type of storage, currently "fs" only
       type: fs
       # location of folder with "manifest" file
-      location: ../
+#      location: ./
       # "dev" or "production" mode, default is "production"
       # in the "dev" mode storage is sensitive to file changes
       # and recompiles objects with changed source
