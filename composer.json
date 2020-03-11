@@ -1,18 +1,21 @@
 {
     "name": "gillix/gillix",
-    "description": "Gillix Project skeleton",
+    "description": "Gillix project skeleton",
     "type": "project",
-    "require": {
-        "gillix/framework": "^1.0"
-    },
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Yury Timoschuk",
-            "email": "yury.timoschuk@gmail.com"
-        }
-    ],
-
+    "require": {
+        "gillix/framework": "*"
+    },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php bin/compile"
+        ]
+    }
 }

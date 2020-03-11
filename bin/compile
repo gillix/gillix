@@ -6,10 +6,10 @@
    'description' => 'Example package. Please change name and description.',
  ];
  
- require_once '../../framework/vendor/autoload.php';
+ require_once '../../vendor/autoload.php';
  
- $timer = new \glx\Common\Stopwatch;
- $config = \glx\Config\Reader::read(__DIR__.'/../storage-dev.gcml');
+ $timer = \glx\Common\Stopwatch::start();
+ $config = \glx\Config\Reader::read(__DIR__.'/../config/storage-dev.gcml');
  
  $storage = new glx\Storage\FS\Storage($config['storage']['main']);
  $storage->compile(['package' => $package]);

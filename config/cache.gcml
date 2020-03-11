@@ -1,0 +1,19 @@
+# Persistent cache configuration
+# options:
+#   storage: {storage}
+#   fallback: {list of storages}
+# default: [ storage: apc, fallback: temporary ]
+cache: [
+  storage: redis
+  dns: redis://localhost:6379
+  options: [
+      compression: true
+      persistent: 1
+      persistent_id: gillix
+      tcp_keepalive: 0
+      timeout: 30
+      read_timeout: 0
+      retry_interval: 0
+  ]
+  fallback: [ apcu, temporary ]
+]

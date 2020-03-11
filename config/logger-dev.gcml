@@ -8,8 +8,8 @@ logger: [
   production: [
      chrome: error
      file: [
-       ../errors.log, error
-       ../critical.log, critical
+       ../docker/logger-errors.log, error
+       ../docker/logger-critical.log, critical
      ]
 #    telegram: {key}, {channel}, critical
   ]

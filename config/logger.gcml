@@ -12,6 +12,6 @@ logger: [
 #    telegram: {key}, {channel}, critical
   ]
   stat: [
-     chrome: info
+    console: info
   ]
 ]

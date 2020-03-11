@@ -8,7 +8,7 @@ index: start
 # Sequence of profile names in order of priority
 # "{profile1}.{profile2}.{profile3}" | [ profile1, profile2, profile3 ]
 # default: {empty} (default profile)
-profile: local
+#profile: local
 
 # Default locale for project
 # options:
@@ -21,7 +21,7 @@ profile: local
 #   locale: {locale}
 # default: en_US
 locale: [
-  auto: true
+  auto: false
   default: en
 ]
 
