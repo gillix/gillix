@@ -6,11 +6,15 @@
    'description' => 'Example package. Please change name and description.',
  ];
  
- require_once __DIR__.'/../../vendor/autoload.php';
+ $workDir = __DIR__.'/..';
+ chdir($workDir);
+ require_once $workDir.'/../vendor/autoload.php';
+ 
+ 
  
  $timer = \glx\Common\Stopwatch::start();
  $config = \glx\Config\Reader::read(__DIR__.'/../config/storage-dev.gcml');
- 
+
  $storage = new glx\Storage\FS\Storage($config['storage']['main']);
  $storage->compile(['package' => $package]);
  
